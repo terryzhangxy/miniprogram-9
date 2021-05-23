@@ -1,11 +1,14 @@
-<!--components/searchbar/searchbar.wxml-->
-<view class="searchbar" >
+<!-- components/searchbar/searchbar.wxml -->
+<view class="searchbar">
     <view class="searchbar-input">
-        <icon class="weui-icon-search" type="search" size="12"/>
+        <icon class="weui-icon-search" type="search" size="12" />
         <input type="text" class="searchbar-input-box" />
     </view>
     <view class="searchbar-label">
-    
+        <icon class="weui-icon-search" type="search" size="12" />
+        <text class="weui-search-bar__text">搜索</text>
     </view>
-
+    <view class="searchbar-cancelbtn"></view>
+</view>
+<view class="">
 </view>
