@@ -1,4 +1,4 @@
-// miniprogram_npm/components/searchbar/searchbar.js
+// components/searchbar/searchbar.js
 Page({
 
   /**

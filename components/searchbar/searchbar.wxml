@@ -1,0 +1,11 @@
+<!--components/searchbar/searchbar.wxml-->
+<view class="searchbar" >
+    <view class="searchbar-input">
+        <icon class="weui-icon-search" type="search" size="12"/>
+        <input type="text" class="searchbar-input-box" />
+    </view>
+    <view class="searchbar-label">
+    
+    </view>
+
+</view>

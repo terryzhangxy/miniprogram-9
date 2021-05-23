@@ -1,9 +1,0 @@
-<!--miniprogram_npm/components/searchbar/searchbar.wxml-->
-<view class="searchbar">
-    <view class="searchbar-inputbox">
-        <icon class="weui-icon-search" type="search" size="12"/>
-        <input type="text" class="" />
-        
-    </view>
-    <view class="searchbar-label"></view>
-</view>
