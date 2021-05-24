@@ -1,13 +1,29 @@
 
 .searchbar {
     display: flex;
-    height: 50px;
-    background-color: rgb(255, 172, 172);
+    position: relative;
+    padding: 8px;
+    background-color:whitesmoke;
+    box-sizing: border-box;
+    align-items: center;
+
 }
 
 .searchbar__form {
-    margin-top: 3px;
-    margin-bottom: 3px;
-    background-color: wheat;
+    position: relative;
+    background-color:white;
     border-radius:5px;
+    height: 36px;
+    width: 100%;
+    flex: auto;
+}
+
+.searchbar__inputbox {
+    position: relative;
+    background-color:rgb(39, 163, 70);
+
+}
+
+.searchbar__label {
+
 }

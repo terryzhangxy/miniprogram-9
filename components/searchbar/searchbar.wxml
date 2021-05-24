@@ -1,8 +1,8 @@
 
 <view class="searchbar">
     <view class="searchbar__form">
-        <view class="searchbar__input">
-            <icon class="weui-icon-search" type="search" size="12" />
+        <view class="searchbar__inputbox">
+            <icon class="weui-icon-search" type="search" size="16" />
             <input type="text" class="searchbar-input-box" />
         </view>
         <view class="searchbar-label">
