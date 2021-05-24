@@ -1,1 +1,13 @@
-/* components/searchbar/searchbar.wxss */
+
+.searchbar {
+    display: flex;
+    height: 50px;
+    background-color: rgb(255, 172, 172);
+}
+
+.searchbar__form {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: wheat;
+    border-radius:5px;
+}
