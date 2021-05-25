@@ -3,12 +3,8 @@
 
         <view class="search-bar__box">
             <icon class="weui-icon-search" type="search" size="16" />
-            <input type="text" class="search-bar__input" placeholder="eee" />
-            <text class="weui-icon-clear">取消</text>
-        </view>
-        <view class="search-bar__label">
-            <icon class="weui-icon-search" type="search" size="16" />
-            <text class="">搜索</text>
+            <input type="text" class="search-bar__input" placeholder="{{placeholder}}" bingtap="{{showInput}}"/>
+            <text class="weui-icon-clear search-bar__cancel" bindtap="{{hideInput}}">取消</text>
         </view>
 
 </view>

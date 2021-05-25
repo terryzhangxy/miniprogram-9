@@ -29,16 +29,7 @@
     height: 36px;
     background: transparent;
     z-index: 2;
+    font-size: 14px;
     
 
-}
-
-
-.search-bar__label {
-    display: flex;
-    z-index: 1;
-    margin-top: -36px;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
 }
