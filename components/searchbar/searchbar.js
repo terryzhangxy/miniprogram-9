@@ -18,7 +18,7 @@ Component({
       type: String,
       value:""
     },
-    searchstate:{
+    searchState:{
       type: Boolean,
       value: false
     }
@@ -35,7 +35,7 @@ Component({
   },
 
 
-  method: {
+  methods: {
 
     //清除输入框及查询结果
     clearInput(e){
@@ -43,12 +43,12 @@ Component({
         value: '',
         focus: false,
         result: []
-      })
+      });
     },
 
     //输入框获取焦点
     inputFocus(e){
-      this.triggerEvent('focus', e.detail)
+      this.triggerEvent('focus', e.detail);
     },
 
     //输入框失去焦点
@@ -56,22 +56,22 @@ Component({
       this.triggerEvent('blur',e.detail);
       this.setData({
         focus: false
-      })
+      });
     },
 
     showInput(){
       this.setData({
         focus: true,
-        searchstate: true
-      })
+        searchState: true
+      });
     },
 
     hideInput(){
       this.setData({
         focus: false,
-        searchstate: false
-      }),
-      this.triggerEvent('cancle')
+        searchState: false
+      });
+      this.triggerEvent('cancle');
     },
 
     //动态输入查询

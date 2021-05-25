@@ -7,19 +7,16 @@
     box-sizing: border-box;
     align-items: center;
     flex-wrap: wrap;
-
-
 }
 
 .search-bar__box {
-
     display: flex;
+    display: inline-block;
     position: relative;
     background-color:white;
     border-radius:5px;
     align-items: center;
-    width: 100%;
-
+    flex-grow: 1;
 }
 
 .search-bar__input {
@@ -30,6 +27,8 @@
     background: transparent;
     z-index: 2;
     font-size: 14px;
-    
+}
 
+.search-bar__seaerch {
+    display: inline-block;
 }
