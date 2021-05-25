@@ -1,29 +1,44 @@
 
-.searchbar {
+.search-bar {
     display: flex;
     position: relative;
     padding: 8px;
     background-color:whitesmoke;
     box-sizing: border-box;
     align-items: center;
+    flex-wrap: wrap;
+
 
 }
 
-.searchbar__form {
+.search-bar__box {
+
+    display: flex;
     position: relative;
     background-color:white;
     border-radius:5px;
-    height: 36px;
+    align-items: center;
     width: 100%;
-    flex: auto;
+
 }
 
-.searchbar__inputbox {
+.search-bar__input {
+    display: inline-block;
+    flex-grow: 1;
     position: relative;
-    background-color:rgb(39, 163, 70);
+    height: 36px;
+    background: transparent;
+    z-index: 2;
+    
 
 }
 
-.searchbar__label {
 
+.search-bar__label {
+    display: flex;
+    z-index: 1;
+    margin-top: -36px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
 }
