@@ -11,25 +11,28 @@
 
 .search-bar__box {
     display: flex;
-    display: inline-block;
     position: relative;
     background-color:white;
     border-radius:5px;
     align-items: center;
     flex-grow: 1;
-    justify-content: center;
 }
 
 .search-bar__input {
-    display: inline-block;
     flex-grow: 1;
     position: relative;
     height: 36px;
-    background-color: aqua;
+    background: transparent;
     z-index: 2;
     font-size: 14px;
 }
 
-.search-bar__seaerch {
-    display: inline-block;
+.weui-icon-clear {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.weui-icon-search {
+    margin-left: 10px;
+    margin-right: 8px;
 }
