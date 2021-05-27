@@ -201,7 +201,7 @@ module.exports =
 
           hideInput() {
             this.setData({
-              searchState: false
+              searchState: false,
             });
             this.triggerEvent('cancel');
           },

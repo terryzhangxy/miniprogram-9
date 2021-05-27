@@ -82,7 +82,9 @@ Component({
     hideInput(){
       this.setData({
         focus: false,
-        searchState: false
+        searchState: false,
+        value: '',
+        result: []
       });
       this.triggerEvent('cancle');
     },
