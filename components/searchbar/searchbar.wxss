@@ -6,14 +6,13 @@
     background-color:whitesmoke;
     box-sizing: border-box;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .search-bar__box {
     display: flex;
     position: relative;
     background-color:white;
-    border-radius:5px;
+    border-radius:8px;
     align-items: center;
     flex-grow: 1;
 }
@@ -22,17 +21,21 @@
     flex-grow: 1;
     position: relative;
     height: 36px;
-    background: transparent;
-    z-index: 2;
+    background-color: white;
     font-size: 14px;
 }
 
-.weui-icon-clear {
+.search-bar__cancel {
     margin-left: 8px;
     margin-right: 8px;
 }
 
-.weui-icon-search {
-    margin-left: 10px;
+.search-bar__icon-cancel {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.search-bar__icon-search {
+    margin-left: 8px;
     margin-right: 8px;
 }

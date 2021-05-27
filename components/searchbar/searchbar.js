@@ -33,6 +33,19 @@ Component({
     result:[]
 
   },
+  
+  lifetimes: {
+    // @ts-ignore
+    attached() {
+      // @ts-ignore
+      if (this.data.focus) {
+        this.setData({
+          searchState: true
+        });
+      }
+    }
+
+  },
 
 
   methods: {
@@ -76,9 +89,11 @@ Component({
 
     //动态输入查询
     inputChange(e){
+      
       this.setData({
-        value: e.value.detail
+        value: e.detail.value
       });
+      console.log(e.detail.value)
       this.triggerEvent('input',e.detail);
 
       if (Date.now() - this.lastSearch < this.data.throttle) {
