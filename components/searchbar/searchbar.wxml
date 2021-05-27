@@ -2,10 +2,11 @@
 <view class="search-bar">
 
         <view class="search-bar__box">
-            <icon class="weui-icon-search search-bar__seaerch" type="search" size="16" />
-            <input type="text" class="search-bar__input" placeholder="{{placeholder}}" bindtap="showInput" bindfocus="inputFocus"/>
-            <icon class="weui-icon-search search-bar__seaerch" type="search" size="16" />
+            <icon class="search-bar__icon-search" type="search" size="16" />
+            <input type="text" class="search-bar__input" placeholder="{{placeholder}}" value="{{value}}" bindtap="showInput" focus="{{focus}}" bindinput="inputChange"/>
+            <icon wx:if="{{value.length > 0}}" class="search-bar__icon-cancel" type="cancel" size="15" bindtap="clearInput"></icon>
         </view>
-            <text wx:if="{{searchState}}" class="weui-icon-clear search-bar__cancel" bindtap="hideInput">取消</text>
+        <text wx:if="{{searchState}}" class="search-bar__cancel" bindtap="hideInput">取消</text>
+
 
 </view>
