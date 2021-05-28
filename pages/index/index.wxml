@@ -22,5 +22,5 @@
   </view>
 
 </view>
-<searchbar></searchbar>
+<searchbar search="{{search}}"></searchbar>
 <mp-searchbar bind:selectresult="selectResult" search="{{search}}"></mp-searchbar>

@@ -21,6 +21,10 @@ Component({
     searchState:{
       type: Boolean,
       value: false
+    },
+    search:{
+      type: null,
+      value: null
     }
 
 
@@ -33,7 +37,9 @@ Component({
     result:[]
 
   },
-  
+
+  lastSearch: Date.now(),
+
   lifetimes: {
     // @ts-ignore
     attached() {
@@ -95,7 +101,7 @@ Component({
       this.setData({
         value: e.detail.value
       });
-      console.log(e.detail.value)
+
       this.triggerEvent('input',e.detail);
 
       if (Date.now() - this.lastSearch < this.data.throttle) {
@@ -116,7 +122,19 @@ Component({
           console.error('search error', err);
         });
       }, this.data.throttle);
+      console.log(e.detail.value)
 
+    },
+
+    selectResult(e) {
+      const {
+        index
+      } = e.currentTarget.dataset;
+      const item = this.data.result[index];
+      this.triggerEvent('selectresult', {
+        index,
+        item
+      });
     }
   }
 })

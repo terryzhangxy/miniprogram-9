@@ -8,3 +8,16 @@
         </view>
         <text wx:if="{{searchState}}" class="search-bar__cancel" bindtap="hideInput" >取消</text>
 </view>
+<mp-cells ext-class=" {{'searchbar-result ' + extClass}}" wx:if="{{searchState && result.length > 0}}">
+	<mp-cell
+	 class="result"
+	 bindtap="selectResult"
+	 body-class="weui-cell_primary"
+	 data-index="{{index}}"
+	 wx:for="{{result}}"
+	 wx:key="index"
+	 hover
+	>
+		<view>{{item.text}}</view>
+	</mp-cell>
+</mp-cells>
