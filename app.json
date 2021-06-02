@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/search/search",
     "pages/index/index",
-    "pages/logs/logs",
-    "miniprogram_npm/components/searchbar/searchbar"
+    "pages/logs/logs"
+
   ],
   "window": {
     "backgroundTextStyle": "light",
