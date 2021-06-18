@@ -10,7 +10,7 @@
 			 focus="{{focus}}"
 			 bindblur="inputBlur"
 			 bindfocus="inputFocus"
-			 bindinput="inputChange"
+			 bindinput="inputChange"/
 			/>
 			<text class="weui-icon-clear" hover-class="weui-active" wx:if="{{value.length > 0}}" bindtap="clearInput"/>
 

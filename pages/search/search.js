@@ -65,7 +65,21 @@ Page({
   onShareAppMessage: function () {
 
   },
+
   search: function (value) {
+      var that = this
+      wx.request({
+          URL:'http://192.168.1.6:8000/bkinforesearch',
+          Headers:{'content_type':'application/json'},
+          success:function(res){
+              return URL
+
+
+            
+          }
+      }
+
+      )
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve([{text: '搜索结果', value: 1}, {text: '搜索结果2', value: 2}])
